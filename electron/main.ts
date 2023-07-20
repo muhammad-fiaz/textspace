@@ -23,9 +23,11 @@ function createWindow() {
     width: 1080, // width and height is required
     height: 720, //height of the window
     frame: false,
-    // transparent: true ,
+   // titleBarOverlay: true,
+ //  transparent: true ,
+
     // titleBarStyle: 'hidden', also you can use this 
-    icon: path.join(process.env.PUBLIC, 'electron-vite.svg'),
+    icon: path.join(process.env.PUBLIC, 'icon-512x512.png'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       nodeIntegration: true,

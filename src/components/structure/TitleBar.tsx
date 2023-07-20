@@ -18,6 +18,7 @@ function TitleBar() {
 
     return (
         <div>
+
             <div>
                 <div className="titlebar titlestyle">
                     <div className="menu">

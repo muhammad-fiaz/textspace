@@ -1,5 +1,7 @@
 
 
+
+
 .titlebar {
     display: flex;
     justify-content: space-between;
@@ -7,6 +9,8 @@
     transition: 0.5s all ease-in-out;
     padding: 5px;
     background-color: #333; /* Dark background color for the title bar */
+    border-bottom: 1px solid #4f4848; /* Add a 1px solid border with the color of your choice */
+    z-index: 999;
 }
 
 .windowtitle {

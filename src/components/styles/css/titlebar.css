@@ -7,7 +7,7 @@
     justify-content: space-between;
     align-items: center;
     transition: 0.5s all ease-in-out;
-    padding: 5px;
+    padding: 1px;
     background-color: #333; /* Dark background color for the title bar */
     border-bottom: 1px solid #4f4848; /* Add a 1px solid border with the color of your choice */
     z-index: 999;
@@ -125,6 +125,7 @@
     opacity: 0.8;
 }
 .logo {
+    margin-left: 6px; /* Adjust the margin to create less space between the logo and the menu */
     margin-right: 10px; /* Adjust the margin to create less space between the logo and the menu */
 }
 

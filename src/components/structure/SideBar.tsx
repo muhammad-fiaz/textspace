@@ -17,7 +17,14 @@ function SideBar() {
                 </li>
                 {/* Add more list items as needed */}
             </ul>
+            {/*    <div className="rightsidebar">
+                <ul className="iconList">
+                </ul>
+            </div>
+*/}
+
         </div>
+
     );
 }
 

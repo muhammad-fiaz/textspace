@@ -90,3 +90,5 @@ window.onmessage = ev => {
 }
 
 setTimeout(removeLoading, 4999)
+
+

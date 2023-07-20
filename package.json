@@ -6,11 +6,21 @@
     "dev": "vite",
     "build": "tsc && vite build && electron-builder",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "compile:sass": "sass ./style.scss ./style.css -w"
   },
   "dependencies": {
+    "@electron/remote": "^2.0.10",
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@types/electron": "^1.6.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "sass": "^1.64.0",
     "vite-tsconfig-paths": "^4.2.0"
   },
   "devDependencies": {
@@ -19,11 +29,12 @@
     "@typescript-eslint/eslint-plugin": "^5.59.0",
     "@typescript-eslint/parser": "^5.59.0",
     "@vitejs/plugin-react": "^4.0.0",
-    "electron": "^24.4.0",
+    "electron": "^24.6.3",
     "electron-builder": "^23.6.0",
     "eslint": "^8.38.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
+    "json-loader": "^0.5.7",
     "typescript": "^5.0.2",
     "vite": "^4.3.2",
     "vite-plugin-electron": "^0.11.2",

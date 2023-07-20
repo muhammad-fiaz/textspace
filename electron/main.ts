@@ -1,4 +1,4 @@
-import { app, BrowserWindow } from 'electron'
+import { app, BrowserWindow,ipcMain } from 'electron'
 import path from 'node:path'
 
 // The built directory structure
@@ -20,13 +20,25 @@ const VITE_DEV_SERVER_URL = process.env['VITE_DEV_SERVER_URL']
 
 function createWindow() {
   win = new BrowserWindow({
+    width: 1080, // width and height is required
+    height: 720, //height of the window
     frame: false,
-    // transparent: true ,
+   // titleBarOverlay: true,
+ //  transparent: true ,
+
     // titleBarStyle: 'hidden', also you can use this 
-    icon: path.join(process.env.PUBLIC, 'electron-vite.svg'),
+    icon: path.join(process.env.PUBLIC, 'icon-512x512.png'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
+      nodeIntegration: true,
+        contextIsolation: false,
+
     },
+    // Limiting the window resolution
+    minWidth: 900,  // Set the minimum width
+    minHeight: 600, // Set the minimum height
+    maxWidth: 1920, // Set the maximum width
+    maxHeight: 1080, // Set the maximum height
   })
 
   // Test active push message to Renderer-process.
@@ -41,6 +53,25 @@ function createWindow() {
     win.loadFile(path.join(process.env.DIST, 'index.html'))
   }
 }
+
+// Handle minimize event
+ipcMain.on('minimize', () => {
+  win?.minimize();
+});
+
+// Handle maximize event
+ipcMain.on('maximize', () => {
+  if (win?.isMaximized()) {
+    win?.restore();
+  } else {
+    win?.maximize();
+  }
+});
+
+// Handle quit event
+ipcMain.on('quit', () => {
+  app.quit();
+});
 
 app.on('window-all-closed', () => {
   win = null

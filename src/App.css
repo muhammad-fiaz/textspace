@@ -1,42 +1,28 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    -webkit-app-region: drag; /*This will make the Custom Window draggable*/
+background-color: #1d1d26;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+body * {
+    box-sizing: border-box;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+button {
+    -webkit-app-region: no-drag; /*This will make the button not draggable*/
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.container {
+    background-color: #1e1e1e;
+    height: 100%;
+    padding: 0;
+    display: grid;
+    min-width: 100%;
+    grid-template-rows: auto 1fr;
+    transition: 0.5s all ease-in-out;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.titlebar {
+    -webkit-user-select: none; /*This will prevent the user from selecting the titlebar*/
+    -webkit-app-region: drag;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}

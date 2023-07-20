@@ -2,7 +2,7 @@ import TitleBar from "./components/structure/TitleBar.tsx";
 import './App.css';
 import SideBar from "./components/structure/SideBar.tsx";
 import BottomBar from "./components/structure/BottomBar.tsx";
-import ShortcutKey from "./components/sections/WindowMsg.tsx";
+import WindowMsg from "./components/sections/WindowMsg.tsx";
 
 function App() {
 
@@ -15,8 +15,7 @@ function App() {
             <SideBar/>
             <BottomBar />
             <div className="shortcut-container">
-                <ShortcutKey  />
-
+                <WindowMsg/>
             </div>
         </div>
 

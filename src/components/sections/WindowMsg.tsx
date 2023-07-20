@@ -3,11 +3,8 @@ import React from 'react';
 import '../../components/styles/css/windowmsg.css';
 import imageSrc from '../../assets/icons/MacOS.appiconset/icon-512x512.png'; // Replace with the actual path to your image
 
-interface ShortcutKeyProps {
-    shortcut: string;
-}
 
-const ShortcutKey: React.FC<ShortcutKeyProps> = ({ shortcut }) => {
+const WindowMsg: React.FC = () => {
     return (
         <div className="shortcut-key">
             <img src={imageSrc} alt="Image" className="centered-image" />
@@ -19,7 +16,7 @@ const ShortcutKey: React.FC<ShortcutKeyProps> = ({ shortcut }) => {
                 open file <span className="shortcut">ctrl + 0</span>
             </div>
             <div className="line">
-                open folder <span className="shortcut">ctrl + F {shortcut}</span>
+                open folder <span className="shortcut">ctrl + F </span>
             </div>
             <div className="line">
                 open terminal <span className="shortcut">ctrl + T</span>
@@ -28,4 +25,4 @@ const ShortcutKey: React.FC<ShortcutKeyProps> = ({ shortcut }) => {
     );
 };
 
-export default ShortcutKey;
+export default WindowMsg;

@@ -15,9 +15,9 @@ Use this section to know about the versions of your project that are currently s
 
 To report a vulnerability in the repository, please follow these steps:
 
-1. Go to the [Issues](https://github.com/codespace/repository/issues) section of the repository.
+1. Go to the [Issues](https://github.com/textspace/repository/issues) section of the repository.
 
-2. Click on the "[New Issue](https://github.com/muhammad-fiaz/codespace/issues/new)" button.
+2. Click on the "[New Issue](https://github.com/muhammad-fiaz/textspace/issues/new)" button.
 
 3. Select the "Vulnerability Report" issue template.
 

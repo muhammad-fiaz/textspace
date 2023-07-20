@@ -1,0 +1,5 @@
+{
+  "menuItems": ["File", "Project", "Terminal", "Tools", "Preferences", "Help"],
+  "titleWindow": "CodeSpace Editor",
+  "titleName": "My Application"
+}

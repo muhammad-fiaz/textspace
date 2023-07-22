@@ -1,0 +1,28 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    -webkit-app-region: drag; /*This will make the Custom Window draggable*/
+    background-color: #1d1d26;
+}
+
+body * {
+    box-sizing: border-box;
+}
+button {
+    -webkit-app-region: no-drag; /*This will make the button not draggable*/
+}
+.container {
+    background-color: #1e1e1e;
+    height: 100%;
+    padding: 0;
+    display: grid;
+    min-width: 100%;
+    grid-template-rows: auto 1fr;
+    transition: 0.5s all ease-in-out;
+}
+.titlebar {
+    -webkit-user-select: none; /*This will prevent the user from selecting the titlebar*/
+    -webkit-app-region: drag;
+}
+

@@ -1,0 +1,37 @@
+.shortcut-key {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shortcut {
+    background-color: #2b303b;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.centered-image {
+    width: 100px; /* Adjust the image width as needed */
+    height: 100px; /* Adjust the image height as needed */
+}
+
+.spacer {
+    height: 10px; /* Add space between the image and the text */
+}
+
+.line {
+    margin-top: 10px; /* Add space between each line */
+}
+.shortcut-key {
+    user-select: none; /* Disable text selection */
+}

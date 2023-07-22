@@ -16,7 +16,10 @@ const createWindow = (): void => {
     height: 720,
     width: 1080,
     frame: false,
+    // titleBarOverlay: true,
+    //  transparent: true ,
 
+    // titleBarStyle: 'hidden', also you can use this
     webPreferences: {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
       nodeIntegration: true,

@@ -7,6 +7,7 @@ import { faTh, faFile } from '@fortawesome/free-solid-svg-icons';
 library.add(faTh, faFile);
 
 import '../../components/styles/css/sidebar.css';
+import React from 'react';
 
 function SideBar() {
     return (

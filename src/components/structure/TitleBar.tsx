@@ -1,20 +1,9 @@
-import jsonData from '../configs/titlebar.json';
-const { ipcRenderer } = window.require('electron');
-import '../styles/css/titlebar.css';
-
-interface AppData {
-    menuItems: string[];
-    titleWindow: string;
-    titleName: string;
-}
-
+import React from "react";
+import '../../../src/components/styles/css/titlebar.css';
+import logo from "../../assets/icons/MacOS.appiconset/icon-256x256.png";
 function TitleBar() {
-    // Function to send IPC events
-    const sendIPCEvent = (event: string) => {
-        ipcRenderer.send(event);
-    };
 
-    const { menuItems, titleWindow } = jsonData as AppData;
+
 
     return (
         <div>
@@ -23,25 +12,28 @@ function TitleBar() {
                 <div className="titlebar titlestyle">
                     <div className="menu">
                         <div className="logo">
-                            <img src="src/assets/icons/Windows/Square310x310Logo.scale-150.png" alt="Logo" />
+                            <img src={logo} alt="Logo" />
                         </div>
                         <ul>
-                            {menuItems.map((item, index) => (
-                                <li key={index} className={index === 0 ? 'active' : ''}>
-                                    {item}
-                                </li>
-                            ))}
+                            <li >
+                                file                                </li>
+                            <li>
+                                view
+                            </li>
+                            <li>
+                                edit
+                            </li>
                         </ul>
                     </div>
-                    <div className="windowtitle preventSelect drag">{titleWindow}</div>
+                    <div className="windowtitle preventSelect drag">TextSpace</div>
                     <div className="windowControl preventSelect">
-                        <button id="minimise" onClick={() => sendIPCEvent('minimize')}>
+                        <button id="minimise" >
                             <div className="min"></div>
                         </button>
-                        <button id="maximise" onClick={() => sendIPCEvent('maximize')}>
+                        <button id="maximise" >
                             <div className="max"></div>
                         </button>
-                        <button id="quit" onClick={() => sendIPCEvent('quit')}>
+                        <button id="quit" >
                             <div className="qui"></div>
                         </button>
                     </div>

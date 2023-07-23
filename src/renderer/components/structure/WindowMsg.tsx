@@ -1,7 +1,7 @@
 // ShortcutKey.tsx
 import React from 'react';
 import '../../../styles/windowmsg.scss';
-import imageSrc from '../../../../assets/icons/MacOS.appiconset/icon-512x512.png'; // Replace with the actual path to your image
+import imageSrc from "../../../../assets/icons/MacOS.appiconset/icon-512x512.png"; // Replace with the actual path to your image
 
 
 const WindowMsg: React.FC = () => {

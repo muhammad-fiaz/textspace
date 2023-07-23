@@ -1,52 +1,77 @@
 {
   "name": "textspace",
-  "productName": "textspace",
+  "productName": "TextSpace",
   "version": "1.0.0",
-  "description": "A text editor for developers and programmers",
+  "description": "textspace is a editor for developers and programmers",
   "main": ".webpack/main",
   "scripts": {
-    "start": "electron-forge start",
+    "start": "cross-env NODE_ENV=development electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "eslint --ext .ts,.tsx ."
+    "lint": "eslint src/ --ext .ts,.js,.tsx,.jsx"
   },
-  "keywords": [],
+  "keywords": [
+    "textspace",
+    "texteditor",
+    "ide"
+  ],
   "author": {
-    "name": "Muhammad Fiaz",
-    "email": "s.muhammadfiaz2003@gmail.com"
+    "name": "muhammad-fiaz",
+    "url": "https://github.com/muhammad-fiaz"
   },
-  "license": "Aphache License 2.0",
+  "contributors": [
+    {
+      "name": "muhammad-fiaz",
+      "url": "https://github.com/muhammad-fiaz"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muhammad-fiaz/textspace"
+  },
+  "license": "Apache-2.0",
+  "config": {
+    "forge": "./tools/forge/forge.config.js"
+  },
   "devDependencies": {
-    "@babel/core": "^7.22.9",
-    "@babel/preset-react": "^7.22.5",
-    "@electron-forge/cli": "^6.2.1",
-    "@electron-forge/maker-deb": "^6.2.1",
-    "@electron-forge/maker-rpm": "^6.2.1",
-    "@electron-forge/maker-squirrel": "^6.2.1",
-    "@electron-forge/maker-zip": "^6.2.1",
-    "@electron-forge/plugin-auto-unpack-natives": "^6.2.1",
-    "@electron-forge/plugin-webpack": "^6.2.1",
+    "@electron-forge/cli": "6.2.1",
+    "@electron-forge/maker-deb": "6.2.1",
+    "@electron-forge/maker-rpm": "6.2.1",
+    "@electron-forge/maker-squirrel": "6.2.1",
+    "@electron-forge/maker-zip": "6.2.1",
+    "@electron-forge/plugin-vite": "^6.2.1",
+    "@electron-forge/plugin-webpack": "6.2.1",
+    "@marshallofsound/webpack-asset-relocator-loader": "^0.5.0",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
+    "@types/node": "^20.4.4",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "@typescript-eslint/parser": "^5.0.0",
-    "@vercel/webpack-asset-relocator-loader": "1.7.3",
-    "babel-loader": "^9.1.3",
-    "css-loader": "^6.0.0",
+    "@types/webpack-env": "^1.18.1",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "@vercel/webpack-asset-relocator-loader": "^1.7.3",
+    "classnames": "^2.3.2",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.8.1",
     "electron": "^25.3.1",
-    "eslint": "^8.0.1",
-    "eslint-plugin-import": "^2.25.0",
+    "eslint": "^8.45.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-react": "^7.33.0",
     "file-loader": "^6.2.0",
-    "fork-ts-checker-webpack-plugin": "^7.2.13",
-    "image-webpack-loader": "^8.1.0",
+    "fork-ts-checker-webpack-plugin": "^8.0.0",
+    "less": "^4.1.3",
+    "less-loader": "11.1.3",
     "node-loader": "^2.0.0",
-    "style-loader": "^3.0.0",
-    "svg-url-loader": "^8.0.0",
-    "ts-loader": "^9.2.2",
-    "ts-node": "^10.0.0",
-    "typescript": "~4.5.4",
-    "url-loader": "^4.1.1"
+    "node-sass": "^9.0.0",
+    "react-refresh": "^0.14.0",
+    "sass": "^1.64.1",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "ts-loader": "9.4.4",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
@@ -54,8 +79,8 @@
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "electron-builder": "^24.4.0",
     "electron-squirrel-startup": "^1.0.0",
+    "monaco-editor": "^0.40.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }

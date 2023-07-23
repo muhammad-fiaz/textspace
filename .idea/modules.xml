@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/textspace.iml" filepath="$PROJECT_DIR$/.idea/textspace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/electron-react-webpack-typescript-2023-master.iml" filepath="$PROJECT_DIR$/.idea/electron-react-webpack-typescript-2023-master.iml" />
     </modules>
   </component>
 </project>

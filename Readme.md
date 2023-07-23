@@ -1,7 +1,7 @@
 # TextSpace - Text Editor for Coding and Development
 
 <p align="center">
-  <img src="src/assets/icons/AppIcon.appiconset/Icon-83.5@2x.png" alt="TextSpace Logo">
+  <img src="assets/icons/AppIcon.appiconset/Icon-83.5@2x.png" alt="TextSpace Logo">
 </p>
 
 TextSpace is a powerful Electron-based text editor designed specifically for coding and development. It is built using React, Vite, and TypeScript to provide a seamless and productive IDE-like experience for developers. Whether you're a beginner or an experienced programmer, TextSpace will help you write, edit, and organize your code efficiently.

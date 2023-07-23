@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "jsx": "react",
     "allowJs": true,
-    "module": "commonjs",
+    "target": "ES6",
+    "module": "ESNext",
     "skipLibCheck": true,
     "esModuleInterop": true,
     "noImplicitAny": true,
@@ -12,9 +13,15 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "paths": {
-      "*": ["node_modules/*"]
-    },
-    "jsx": "react"
+      "*": ["node_modules/*"],
+      "@assets/*": ["./assets/*"],
+      "@components/*": ["./src/renderer/components/*"],
+      "@common/*": ["./src/common/*"],
+      "@main/*": ["./src/main/*"],
+      "@renderer/*": ["./src/renderer/*"],
+      "@src/*": ["./src/*"],
+      "@systems/*": ["./systems/*"],
+    }
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*", "tools/**/*"]
 }

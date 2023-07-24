@@ -1,20 +1,3 @@
-.tabbar {
-  position: fixed;
-  left: 216px; /* Adjust this value to position it next to the .explorer */
-  top: 34px;
-  width: calc(100% - 215px);
-  border-left: 1px solid #4f4848;
-  height: 30px;
-  background-color: var(--titlebar-bgcolor);
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  z-index: 200;
-  border-bottom: 1px solid #4f4848;
-}
-
 /* Styles for the editor container */
 .editor-container {
   position: fixed;
@@ -27,7 +10,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  z-index: 200;
+  z-index: 300;
   border-top: 1px solid #4f4848;
   border-bottom: 1px solid #4f4848;
 }

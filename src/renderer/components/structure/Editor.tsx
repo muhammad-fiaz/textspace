@@ -13,10 +13,15 @@ function Editors({ theme }: EditorEngineProps) {
 
     // Create a new Monaco editor instance and attach it to the DOM element
     editorRef.current = monaco.editor.create(document.getElementById('editor'), {
-      value: '// Start coding here...',
-      language: 'python',
+      value: '//Welcome to the textSpace your ultimate code editor',
+      language: 'plaintext', // Set the language to plaintext for plain text content
       theme: theme === 'vs-light' ? 'vs-light' : 'vs-dark',
       automaticLayout: true,
+      minimap: {
+        enabled: true, // Enable the minimap
+      },
+
+
     });
 
     return () => {

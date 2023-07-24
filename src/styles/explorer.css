@@ -24,4 +24,21 @@
   z-index: 1;
 }
 
+.exp_tabbar {
+  position: fixed;
+  left: 35px;
+  top: 34px;
+  width: 180px;
+  border-left: 1px solid #4f4848;
+  height: 30px;
+  background-color: var(--titlebar-bgcolor);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 200;
+  border-bottom: 1px solid #4f4848;
+}
+
 /*# sourceMappingURL=explorer.css.map */

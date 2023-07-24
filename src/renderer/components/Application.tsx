@@ -37,6 +37,7 @@ const Application: React.FC = () => {
     }
   }, [darkTheme]);
 
+  const theme = 'vs-dark';
 
 
   return (
@@ -45,7 +46,7 @@ const Application: React.FC = () => {
       <BottomBar/>
       <WindowMsg/>
       <Explorer/>
-<Editors/>
+      <Editors theme={theme} />
     </div>
   );
 };

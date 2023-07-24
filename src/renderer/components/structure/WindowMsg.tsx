@@ -1,6 +1,9 @@
-// ShortcutKey.tsx
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import React from 'react';
 import '../../../styles/windowmsg.scss';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import imageSrc from "../../../../assets/icons/MacOS.appiconset/icon-512x512.png"; // Replace with the actual path to your image
 
 

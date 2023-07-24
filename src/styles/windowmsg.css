@@ -24,6 +24,7 @@
 .centered-image {
   width: 100px; /* Adjust the image width as needed */
   height: 100px; /* Adjust the image height as needed */
+  z-index: -999;
 }
 
 .spacer {

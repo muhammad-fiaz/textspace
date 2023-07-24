@@ -5,6 +5,8 @@ import BottomBar from '@components/structure/BottomBar';
 import WindowMsg from '@components/structure/WindowMsg';
 import Explorer from '@components/structure/Explorer';
 import Editors from '@components/structure/Editor';
+import EditorTabs from '@components/structure/EditorTabs';
+
 
 const Application: React.FC = () => {
   const [darkTheme, setDarkTheme] = useState(true);
@@ -45,7 +47,8 @@ const Application: React.FC = () => {
       <BottomBar/>
       <WindowMsg/>
       <Explorer/>
-<Editors/>
+<EditorTabs/>
+
     </div>
   );
 };

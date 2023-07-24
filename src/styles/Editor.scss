@@ -1,32 +1,32 @@
-.editor {
+
+
+/* Styles for the editor container */
+.editor-container {
   position: fixed;
-  left: 215px; /* Adjust this value to position it next to the .explorer */
-  top: 35px;
+  left: 216px; /* Adjust this value to position it next to the .explorer */
+  top: 64px;
   width: calc(100% - 215px);
   border-left: 1px solid #4f4848;
-  height: calc(100% - 40px);
-  background-color: var(--titlebar-bgcolor);
-  color: #fff;
+  bottom: 0; /* Occupy available vertical space */
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  z-index: 100;
-  border-right: 1px solid #4f4848;
-}
-.tabbar {
-  position: fixed;
-  left: 215px; /* Adjust this value to position it next to the .explorer */
-  top: 35px;
-  width: calc(100% - 215px);
-  border-left: 1px solid #4f4848;
-  height: 10px;
-  background-color: #2f77ca;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  z-index: 200;
+  z-index: 300;
+  border-top: 1px solid #4f4848;
   border-bottom: 1px solid #4f4848;
 }
+
+/* Styles for the editor itself */
+.editor {
+  flex: 1; /* Occupy available vertical space */
+  width: 100%;
+  height: 100%;
+}
+
+/* Remove the outline when the editor is focused */
+.editor:focus {
+  outline: none;
+}
+

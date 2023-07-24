@@ -15,8 +15,8 @@ let appWindow: BrowserWindow;
 export function createAppWindow(): BrowserWindow {
   // Create new window instance
   appWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1080,
+    height: 720,
     backgroundColor: '#202020',
     show: false,
     autoHideMenuBar: true,
@@ -24,13 +24,15 @@ export function createAppWindow(): BrowserWindow {
     titleBarStyle: 'hidden',
     icon: path.resolve('assets/images/appIcon.ico'),
     webPreferences: {
-      nodeIntegration: false,
+      nodeIntegration: true,
       contextIsolation: true,
-      nodeIntegrationInWorker: false,
-      nodeIntegrationInSubFrames: false,
+      nodeIntegrationInWorker: true,
+      nodeIntegrationInSubFrames: true,
       preload: APP_WINDOW_PRELOAD_WEBPACK_ENTRY,
       sandbox: false,
     },
+    minWidth: 500,
+    minHeight: 300,
   });
 
   // Load the index.html of the app window.

@@ -6,6 +6,7 @@ interface EditorEngineProps {
   theme: 'vs-light' | 'vs-dark';
 }
 
+
 function Editors({ theme }: EditorEngineProps) {
   const editorRef = useRef(null);
 

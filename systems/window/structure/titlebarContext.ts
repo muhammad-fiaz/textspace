@@ -58,7 +58,14 @@ const titlebarContext = {
     ipcRenderer.invoke('open-url', url);
   },
 
+ open_folder() {
+  ipcRenderer.invoke('open-folder');
 
+  },
+  open_file() {
+    ipcRenderer.invoke('open-file');
+
+  },
 
 };
 

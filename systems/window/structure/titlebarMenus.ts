@@ -21,20 +21,21 @@ const titlebarMenus: TitlebarMenu[] = [
         action: 'new_file',
         shortcut: 'Ctrl+N',
       },
-      {
-        name: 'new window',
-        action: 'new_window',
-        shortcut: 'Ctrl+W',
-      },
+
       {
         name: 'open file',
         action: 'open_file',
-        shortcut: 'Ctrl+Shift+O',
+        shortcut: 'Ctrl+O',
       },
       {
         name: 'open folder',
         action: 'open_folder',
         shortcut: 'Ctrl+Shift+F',
+      },
+      {
+        name: 'Settings',
+        action: 'settings',
+        shortcut: 'Ctrl+Shift+S',
       },
       {
         name: 'Exit',

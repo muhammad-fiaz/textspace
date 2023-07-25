@@ -30,6 +30,8 @@ export function createAppWindow(): BrowserWindow {
       nodeIntegrationInSubFrames: true,
       preload: APP_WINDOW_PRELOAD_WEBPACK_ENTRY,
       sandbox: false,
+      webSecurity: true,
+      allowRunningInsecureContent: false
     },
     minWidth: 500,
     minHeight: 300,

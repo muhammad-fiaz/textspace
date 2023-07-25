@@ -1,6 +1,6 @@
 
 
-import { BrowserWindow, ipcMain, shell } from 'electron';
+import { BrowserWindow, ipcMain, shell,dialog } from 'electron';
 
 export const registerTitlebarIpc = (mainWindow: BrowserWindow) => {
   ipcMain.handle('window-minimize', () => {
@@ -83,5 +83,34 @@ export const registerTitlebarIpc = (mainWindow: BrowserWindow) => {
     shell.openExternal(url);
   });
 
+  ipcMain.handle('open-folder', async () => {
+    const result = await dialog.showOpenDialog(mainWindow, {
+      properties: ['openDirectory'],
+    });
+
+    // `result.canceled` will be true if the user cancels the dialog
+    if (!result.canceled && result.filePaths.length > 0) {
+      // `result.filePaths` contains the selected folder path
+      // You can do something with the selected folder path here
+      console.log('Selected folder:', result.filePaths[0]);
+      // For example, you could send the folder path back to the renderer process
+      // using the event.sender.send method and handle it in the renderer process.
+      mainWindow.webContents.send('selected-folder', result.filePaths[0]);
+    }
+  });
+
+  ipcMain.handle('open-file', async () => {
+    const result = await dialog.showOpenDialog(mainWindow, {
+      properties: ['openFile'],
+    });
+
+    if (!result.canceled && result.filePaths.length > 0) {
+
+      console.log('Selected file:', result.filePaths[0]);
+
+      mainWindow.webContents.send('selected-file', result.filePaths[0]);
+    }
+
+  });
 
 };

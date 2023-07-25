@@ -6,7 +6,6 @@
   width: calc(100% - 215px);
   border-left: 1px solid #4f4848;
   bottom: 0; /* Occupy available vertical space */
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +25,6 @@
 /* Remove the outline when the editor is focused */
 .editor:focus {
   outline: none;
-
 }
 
 /*# sourceMappingURL=Editor.css.map */

@@ -1,4 +1,4 @@
-# TextSpace Project Code of Conduct
+# Project Code of Conduct
 
 ## Our Pledge
 

@@ -6,7 +6,7 @@
 
 TextSpace is a powerful Electron-based text editor designed specifically for coding and development. It is built using React, Vite, and TypeScript to provide a seamless and productive IDE-like experience for developers. Whether you're a beginner or an experienced programmer, TextSpace will help you write, edit, and organize your code efficiently.
 
-**Note:This Project Still in Active Development so if you interested in this project create a pull request and contribute to this repository**
+**Note:This Project is Still in Active Development so if you are interested in this project create a pull request and contribute to this repository don't forget to star 🌟 the repository **
 
 ## Contributing
 
